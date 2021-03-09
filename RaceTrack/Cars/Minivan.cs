@@ -21,7 +21,8 @@ namespace RaceTrack.RaceTrack.Cars
 
         public override void StopEngine()
         {
-            throw new NotImplementedException();
+            
+            Console.WriteLine($"The {Name} comes to a stop.");
         }
     }
 }
