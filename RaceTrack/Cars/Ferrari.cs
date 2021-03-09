@@ -1,27 +1,29 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace RaceTrack.RaceTrack.Cars
 {
-    public class Tractor : RaceCar
+    public  class Ferrari : RaceCar
     {
-        public Tractor()
+        public Ferrari()
         {
-            Name = "Tractor";
-            TopSpeed = 20;
+            Name = "Ferrari Enzo";
+            TopSpeed = 350;
+
         }
 
-        public override void StartEngine()
+         public override void StartEngine()
         {
-            Console.WriteLine($"The {Name} struggles to start");
+            Console.WriteLine($"The {Name} prances to life!");
         }
 
         public override void Brake()
         {
-            Console.WriteLine($"The {Name} is having a hard time stopping!");
+            Console.WriteLine($"The {Name} takes a breather!");
             base.Brake();
         }
 

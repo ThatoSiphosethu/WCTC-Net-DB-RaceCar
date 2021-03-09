@@ -15,12 +15,14 @@ namespace RaceTrack
             raceTrack.PositionCars();
             raceTrack.DriversReady();
             raceTrack.StartRace();
+        
 
             for (int i = 0; i < raceTrack.NumberOfLaps; i++)
             {
                 raceTrack.AnnouncePositions();
             }
 
+            
             raceTrack.EndRace();
             raceTrack.AnnounceWinners();
         }
